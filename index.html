@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Showdown Log to Replay</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./template.js" async defer></script>
+    <script type="text/javascript" src="./script.js" async defer></script>
+</head>
+<body>
+    <div class="main">
+        <input id="upload-file" type="file" class="file-hidden" accept=".log,.txt">
+        <div class="top-bar">
+            <div class="top-bar-title"><h1>Pokemon Showdown Log to Replay</h1></div>
+            <div class="top-bar-controls">
+                <button type="button" id="upload-button">Upload Log</button>
+            </div>
+        </div>
+        <div class="replay-result">
+            <div class="drag-notice-container">
+                <div class="drag-notice">Drop a log file here</div>
+            </div>
+            <div class="iframe-result-container"></div>
+        </div>
+    </div>
+</body>
+</html>

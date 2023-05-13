@@ -1,0 +1,79 @@
+/* Main style */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top-bar {
+    width: 100%;
+    background-color: lightgray;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-title,
+.top-bar-controls {
+    padding: 0.5rem;
+}
+
+.top-bar-title h1 {
+    font-size: 24px;
+}
+
+.top-bar-controls button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.replay-result {
+    width: 100%;
+}
+
+.drag-notice-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.drag-notice {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: dashed 1px gray;
+}
+
+.file-hidden {
+    display: none;
+}
+
+.iframe-result-container iframe {
+    width: 100%;
+    height: 540px;
+    border: none;
+}
