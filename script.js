@@ -7,7 +7,7 @@ function escapeHTML(html) {
 }
 
 function generateHTML(log) {
-    return TemplateHTML.replace("${BATTLE_LOG}", escapeHTML(log));
+    return TemplateHTML.replace("${BATTLE_LOG}", log);
 }
 
 function setReplay(log) {
